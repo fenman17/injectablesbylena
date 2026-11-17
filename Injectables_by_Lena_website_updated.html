@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injectables by Lena | Sherwood Park, AB | Specialized Neuromodulator Treatments</title>
+    <meta name="description" content="Lena provides premium neuromodulator and Dysport/Botox treatments in Sherwood Park, AB. Achieve a natural, youthful look. Book your expert consultation today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Metrophobic&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CSS Reset & Variables --- */
+        :root {
+            /* Palette: Champagne, Creme, Charcoal */
+            --p-champagne: #F0E6D9;
+            --p-creme: #F8F5F0;
+            --p-charcoal: #2C3539;
+            --accent-gold: #D4AF37;
+            --text-main: #333333;
+            --text-light: #666666;
+            
+            --font-heading: 'Crimson Pro', serif;
+            --font-body: 'Metrophobic', sans-serif;
+            
+            --max-width: 1200px;
+            --section-padding: 80px 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-main);
+            line-height: 1.8;
+            background-color: var(--p-creme);
+            font-size: 17px;
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--p-charcoal);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 52px; margin-bottom: 20px; }
+        h2 { font-size: 40px; margin-bottom: 30px; text-align: center; }
+        h3 { font-size: 24px; margin-bottom: 15px; }
+
+        p { margin-bottom: 20px; color: var(--text-light); }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-block;
+            padding: 16px 35px;
+            background-color: var(--p-charcoal);
+            color: var(--p-creme);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 1px solid var(--p-charcoal);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--p-charcoal);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--p-charcoal);
+            border: 1px solid var(--p-charcoal);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--p-charcoal);
+            color: var(--p-creme);
+        }
+
+        /* --- Layout --- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            padding: var(--section-padding);
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            color: var(--p-charcoal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-subtitle {
+            font-size: 14px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* --- Hero --- */
+        .hero {
+            padding-top: 200px;
+            padding-bottom: 120px;
+            position: relative;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--p-creme);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 245, 240, 0.85);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1, .hero .subtitle {
+            color: var(--p-charcoal);
+        }
+        
+        .hero-content p {
+            color: #444;
+            font-weight: 500;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: #fff;
+            padding: 8px 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 50px;
+            margin-bottom: 25px;
+        }
+
+        /* --- Services --- */
+        .services {
+            background-color: #fff;
+        }
+
+        .services-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background-color: var(--p-creme);
+            padding: 50px;
+            border-radius: 4px;
+            border: 1px solid var(--p-champagne);
+            text-align: center;
+        }
+
+        /* --- Philosophy (About) --- */
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .philosophy-text p {
+            max-width: 550px;
+        }
+
+        .about-photo {
+            width: 100%;
+            height: 350px;
+            border: 2px solid var(--p-champagne);
+            border-radius: 4px;
+            overflow: hidden;
+            background: var(--p-champagne);
+        }
+
+        .about-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* --- Promotional flyer --- */
+        .promo-flyer {
+            background: linear-gradient(135deg, #fff9fb, #f8e6ed);
+            text-align: center;
+        }
+        .promo-flyer img {
+            display: block;
+            width: min(100%, 620px);
+            height: auto;
+            margin: 0 auto 28px;
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(44, 53, 57, 0.14);
+        }
+        .clinic-address {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-top: 8px;
+            display: block;
+        }
+        .instagram-link {
+            color: var(--p-charcoal);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* --- FAQ --- */
+        .faq {
+            background-color: #fff;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+        
+        .faq-item h3 {
+            border-bottom: 2px solid var(--p-champagne);
+            padding-bottom: 15px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--p-charcoal);
+            color: var(--p-champagne);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        footer .logo-text {
+            color: var(--p-champagne);
+            font-size: 32px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        footer .header-subtitle {
+            color: #aaa;
+            margin-bottom: 30px;
+            display: block;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        
+        .footer-copy {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* --- Responsive Queries --- */
+        @media (max-width: 992px) {
+            h1 { font-size: 42px; }
+            h2 { font-size: 34px; }
+            .philosophy-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 60px 20px; }
+            header { padding: 15px 0; }
+            .header-subtitle, nav { display: none; }
+            h1 { font-size: 36px; }
+            .hero { padding-top: 160px; }
+            .faq-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div>
+                <a href="#" class="logo-text">Injectables by Lena</a>
+                <span class="header-subtitle">Specialized Neuromodulator Treatments</span>
+                <span class="clinic-address">167 Provincial Ave, Unit 240, Studio 3, Sherwood Park, AB</span>
+            </div>
+            <nav>
+                <a href="#services">Treatment</a>
+                <a href="#about">Philosophy</a>
+                <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank" class="btn btn-outline btn-sm">Book Online</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">Expert Neuromodulator Specialist in Sherwood Park</span>
+            <h1>Artistry in Every Injection</h1>
+            <p>Lena specializes exclusively in expert neuromodulator treatments (such as Dysport and Botox). We prioritize natural, refreshed results tailored precisely to your unique facial expression and anatomy.</p>
+            <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank" class="btn">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Specialized Treatment</h2>
+            <div class="services-wrapper">
+                <div class="service-card">
+                    <h3>Neuromodulators (Dysport & Botox)</h3>
+                    <p>Expertly administered micro-injections designed to soften dynamic lines and wrinkles in key areas such as the forehead, crow’s feet, and glabella (frown lines). These treatments gently relax targeted muscles to create a smoother, rested appearance while preserving your natural facial expressions. Precise, meticulous placement tailored for optimal longevity in our Sherwood Park clinic.</p>
+                    <br>
+                    <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank" class="btn">Book Your Treatment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy (About) Section -->
+    <section id="about" class="philosophy">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-text">
+                    <span class="subtitle">Lena's Approach to Injections</span>
+                    <h3>A Dedication to Subtle Excellence</h3>
+                    <p>My philosophy is simple: treatments should enhance your innate beauty and refresh your look, never altering who you are.</p>
+                    <p>By focusing exclusively on neuromodulators, every consultation is an in-depth facial muscle and movement assessment. I utilize precise, clinically proven techniques to ensure safe, predictable, and remarkably natural results.</p>
+                    <p>Achieve a smooth, confident, and natural version of yourself right here in Sherwood Park, AB.</p>
+                    <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank" class="btn">Discover Subtle Results</a>
+                </div>
+                <div class="about-photo">
+                    <img src="injectables-by-lena-flyer.png" alt="Injectables by Lena treatment image showing a professional facial injection" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Flyer Section -->
+    <section class="promo-flyer">
+        <div class="container">
+            <h2>Injectables by Lena</h2>
+            <p>Explore our services and book your consultation online.</p>
+            <img src="injectables-by-lena-flyer.png" alt="Injectables by Lena promotional flyer with treatment information and clinic address" loading="lazy">
+            <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank" rel="noopener" class="btn">Book Online</a>
+            <p style="margin-top: 24px;">167 Provincial Ave, Unit 240, Studio 3, Sherwood Park, AB</p>
+            <a class="instagram-link" href="https://www.instagram.com/cosmeticinjectablesbylena/" target="_blank" rel="noopener">@cosmeticinjectablesbylena</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <span class="subtitle">Sherwood Park Clinic</span>
+            <h2>Common Inquiries</h2>
+            <div class="faq-grid">
+                
+                <div class="faq-item">
+                    <h3>How do neuromodulators work?</h3>
+                    <p>Treatments like Dysport and Botox are purified proteins that temporarily relax the specific facial muscles responsible for creating dynamic wrinkles (e.g., forehead lines, frown lines). Results typically begin showing within a few days and last for 3 to 4 months.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer dermal fillers?</h3>
+                    <p>No. Lena focuses exclusively on specialized neuromodulator treatments (Dysport and Botox) to ensure the highest standard of precision, artistry, and expertise in wrinkle relaxation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are consultations necessary?</h3>
+                    <p>Yes. A consultation is essential for every patient. It allows Lena to evaluate your facial muscle movement, discuss your aesthetic goals, and create a personalized treatment plan.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is the recommended pre-treatment care?</h3>
+                    <p>We recommend avoiding blood-thinning medications and supplements (such as aspirin, ibuprofen, or certain fish oils) for about a week prior to your appointment to minimize any minor bruising.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span class="logo-text">Injectables by Lena</span>
+            <span class="header-subtitle">Specialized Neuromodulator Treatments in Sherwood Park, AB</span>
+            <p style="color: #ddd; margin: 0 auto 12px;">167 Provincial Ave, Unit 240, Studio 3, Sherwood Park, AB</p>
+            <p style="color: #aaa; max-width: 600px; margin: 0 auto 30px;">Expert Dysport and Botox treatments designed for natural-looking results. Serving clients in Sherwood Park, Alberta.</p>
+            <p><a class="instagram-link" style="color:#fff;" href="https://www.instagram.com/cosmeticinjectablesbylena/" target="_blank" rel="noopener">@cosmeticinjectablesbylena</a></p>
+            
+            <div class="footer-links">
+                <a href="#services">Treatment</a>
+                <a href="#about">Philosophy</a>
+                <a href="https://portal.zdrovia.ca/organization/cosmetic-injectables-by-lena" target="_blank">Book Online</a>
+            </div>
+            
+            <p class="footer-copy">&copy; 2026 Injectables by Lena. All rights reserved.<br>Treatments are strictly by appointment.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
